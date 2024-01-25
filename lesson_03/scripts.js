@@ -23,7 +23,22 @@
 {
     const userItem = prompt("Укажите наименование товара");
     const userCount = prompt('Укажите количество товара');
+
+    if (typeof productQuantity1 === 'number') {
+        prompt('Укажите количество товара'); 
+    } else {
+        alert ("Вы ввели некорректные данные");
+    }
+
     const userCategory = prompt('Укажите категорию товара');
-    const userPrice = prompt('Укажите стоимость товара'); 
+    const userPrice = prompt('Укажите стоимость товара');
+
+    if (typeof productPrice1 === 'number') {
+        prompt('Укажите количество товара'); 
+    } else {
+        alert ("Вы ввели некорректные данные");
+    }
+    
+    
 }
 
