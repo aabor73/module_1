@@ -11,13 +11,10 @@ const game = () => {
   const answer = prompt(`Угадайте число от ${minNum} до ${maxNum}`);
   if (isNaN(answer)) {
     alert('Пожалуйста введите число!');
-    game();
   } else if (answer < hiddenNum) {
-    alert('Больше!');
-    game();
+    alert('Больше!');   
   } else if (answer > hiddenNum) {
-    alert('Меньше!');
-    game();
+    alert('Меньше!');   
   } else {
     alert(`Вы угадали правильно! Это число ${hiddenNum}!`);
   }
