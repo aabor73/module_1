@@ -45,7 +45,7 @@
 //     }
 // }
 
-
+// Записываем эту же игру с помощью рукурсии
 const minNum = 1;
 const maxNum = 100;
 const hiddenNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
