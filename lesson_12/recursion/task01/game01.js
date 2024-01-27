@@ -45,15 +45,17 @@
 //     }
 // }
 
-// Записываем эту же игру с помощью рукурсии
+
 const minNum = 1;
-const maxNum = 100;
+const maxNum = 10;
 const hiddenNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 
 const game = () => {
   const answer = prompt(`Угадайте число от ${minNum} до ${maxNum}`);
-
-  if (answer < hiddenNum) {
+  if (isNaN(answer)) {
+    alert('Пожалуйста введите число!');
+    game();
+  } else if (answer < hiddenNum) {
     alert('Больше!');
     game();
   } else if (answer > hiddenNum) {
@@ -62,6 +64,7 @@ const game = () => {
   } else {
     alert(`Вы угадали правильно! Это число ${hiddenNum}!`);
   }
+  return game();
 };
 
 game();
