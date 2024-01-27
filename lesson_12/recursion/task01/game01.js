@@ -47,7 +47,7 @@
 
 
 const minNum = 1;
-const maxNum = 10;
+const maxNum = 100;
 const hiddenNum = Math.floor(Math.random() * (maxNum - minNum + 1)) + minNum;
 
 const game = () => {
