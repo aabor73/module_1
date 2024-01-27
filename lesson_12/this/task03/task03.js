@@ -34,29 +34,3 @@ const rectangle = {
 
 console.log(rectangle.getPerimeter()); // 20cm
 console.log(rectangle.getArea()); // 25cm
-
-// console.log(rectangle.width + "cm"); // 5cm
-// console.log(rectangle.height + "cm"); // 5cm
-// console.log(rectangle.getPerimeter()); // 20cm
-// console.log(rectangle.getArea()); // 25cm
-
-// rectangle.setWidth(8);
-// rectangle.setHeight(6);
-// console.log(rectangle.width + "cm"); // 8cm
-// console.log(rectangle.height + "cm"); // 6cm
-// console.log(rectangle.getPerimeter()); // 28cm
-// console.log(rectangle.getArea()); // 48cm
-
-// rectangle.setWidth("invalid value");
-// rectangle.setHeight(10);
-// console.log(rectangle.width + "cm"); // 8cm (unchanged)
-// console.log(rectangle.height + "cm"); // 10cm
-// console.log(rectangle.getPerimeter()); // 36cm
-// console.log(rectangle.getArea()); // 80cm (updated)
-
-// В этом примере объект прямоугольника имеет свойства ширины и высоты
-// со значениями по умолчанию, равными 5. Методы setWidth и setHeight
-// используются для установки значений ширины и высоты соответственно,
-// проверяя, что они являются числами.Метод getPerimeter вычисляет 
-// периметр прямоугольника, а метод getArea вычисляет площадь прямоугольника.
-// Значения возвращаются в виде строк с добавленной единицей измерения «см».
