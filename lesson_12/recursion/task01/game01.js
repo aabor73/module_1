@@ -55,10 +55,12 @@ const game = () => {
   if (isNaN(answer)) {
     alert('Пожалуйста введите число!');
     game();
-  } else if (answer < hiddenNum) {
+  }
+  if (answer < hiddenNum) {
     alert('Больше!');
     game();
-  } else if (answer > hiddenNum) {
+  }
+  if (answer > hiddenNum) {
     alert('Меньше!');
     game();
   } else {
